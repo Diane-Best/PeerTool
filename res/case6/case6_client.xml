@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="P0">
+<graphics>
+<position x="270.0" y="30.0"/>
+</graphics>
+<name>
+<value>P0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P1">
+<graphics>
+<position x="405.0" y="210.0"/>
+</graphics>
+<name>
+<value>P1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P2">
+<graphics>
+<position x="105.0" y="225.0"/>
+</graphics>
+<name>
+<value>P2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P3">
+<graphics>
+<position x="165.0" y="390.0"/>
+</graphics>
+<name>
+<value>P3</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P4">
+<graphics>
+<position x="165.0" y="540.0"/>
+</graphics>
+<name>
+<value>P4</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="!gettpmstatus1">
+<graphics>
+<position x="330.0" y="120.0"/>
+</graphics>
+<name>
+<value>!gettpmstatus1</value>
+<graphics>
+<offset x="74.0" y="51.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="!gettpmstatus2">
+<graphics>
+<position x="90.0" y="465.0"/>
+</graphics>
+<name>
+<value>!gettpmstatus2</value>
+<graphics>
+<offset x="61.0" y="45.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="!send">
+<graphics>
+<position x="165.0" y="120.0"/>
+</graphics>
+<name>
+<value>!send</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="!sendcomplete">
+<graphics>
+<position x="225.0" y="225.0"/>
+</graphics>
+<name>
+<value>!sendcomplete</value>
+<graphics>
+<offset x="107.0" y="34.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="?ackstart">
+<graphics>
+<position x="105.0" y="315.0"/>
+</graphics>
+<name>
+<value>?ackstart</value>
+<graphics>
+<offset x="55.0" y="-17.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="?tpmstatus1">
+<graphics>
+<position x="435.0" y="120.0"/>
+</graphics>
+<name>
+<value>?tpmstatus1</value>
+<graphics>
+<offset x="96.0" y="24.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="?tpmstatus2">
+<graphics>
+<position x="240.0" y="465.0"/>
+</graphics>
+<name>
+<value>?tpmstatus2</value>
+<graphics>
+<offset x="94.0" y="9.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="client_server_gettpmstatus1 to P1" source="!gettpmstatus1" target="P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="132" curvePoint="false"/>
+<arcpath id="001" x="407" y="210" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="client_server_gettpmstatus2 to P4" source="!gettpmstatus2" target="P4">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="106" y="482" curvePoint="false"/>
+<arcpath id="001" x="166" y="541" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="client_server_sendcomplete to P0" source="!sendcomplete" target="P0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="237" y="222" curvePoint="false"/>
+<arcpath id="001" x="278" y="56" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="client_server_send to P2" source="!send" target="P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="177" y="147" curvePoint="false"/>
+<arcpath id="001" x="125" y="224" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P0 to client_server_gettpmstatus1" source="P0" target="!gettpmstatus1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="289" y="54" curvePoint="false"/>
+<arcpath id="001" x="336" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P0 to client_server_send" source="P0" target="!send">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="270" y="52" curvePoint="false"/>
+<arcpath id="001" x="181" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P1 to server_client_tpmstatus1" source="P1" target="?tpmstatus1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="422" y="208" curvePoint="false"/>
+<arcpath id="001" x="447" y="147" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P2 to server_client_ackstart" source="P2" target="?ackstart">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="117" y="251" curvePoint="false"/>
+<arcpath id="001" x="117" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P3 to client_server_gettpmstatus2" source="P3" target="!gettpmstatus2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="166" y="412" curvePoint="false"/>
+<arcpath id="001" x="107" y="472" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P3 to client_server_sendcomplete" source="P3" target="!sendcomplete">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="182" y="388" curvePoint="false"/>
+<arcpath id="001" x="237" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P4 to server_client_tpmstatus2" source="P4" target="?tpmstatus2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="187" y="541" curvePoint="false"/>
+<arcpath id="001" x="246" y="482" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="server_client_ackstart to P3" source="?ackstart" target="P3">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="121" y="327" curvePoint="false"/>
+<arcpath id="001" x="168" y="389" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="server_client_tpmstatus1 to P0" source="?tpmstatus1" target="P0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="441" y="132" curvePoint="false"/>
+<arcpath id="001" x="295" y="49" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="server_client_tpmstatus2 to P3" source="?tpmstatus2" target="P3">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="247" y="472" curvePoint="false"/>
+<arcpath id="001" x="187" y="412" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

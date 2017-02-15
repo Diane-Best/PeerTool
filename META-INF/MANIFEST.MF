@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Rsrc-Class-Path: ./ jgoodies-forms.jar jgoodies-common.jar org.eclipse
+ .wb.swt_1.8.0.r44x201506110825.jar JTattoo.jar liquidlnf.jar dom4j-2.
+ 0.0-RC1.jar
+Class-Path: .
+Rsrc-Main-Class: Combination.PetriFrame
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+
